@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .card {
+    @apply mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600;
+  }
+  .card-title{
+    @apply text-2xl font-bold;
+  }
+  .card-text{
+    @apply mt-4 text-xl;
+  }
+  .d-grid{
+    @apply mt-6 grid max-w-4xl flex-wrap items-center justify-around sm:w-full grid-cols-2 ;
+  }
+  .main{
+    @apply flex w-full flex-1 flex-col items-center justify-center px-20 text-center;
+  }
+  .footer{
+    @apply flex h-24 w-full items-center justify-center border-t;
+  }
+}
